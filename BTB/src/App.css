@@ -1,0 +1,56 @@
+.container {
+  height: 89vh;
+  display: flex;
+  width: 100%;
+}
+
+.left {
+  background: url(../utilities/home2.webp) no-repeat center center/cover;
+  width: 60%;
+}
+
+.right {
+  background-color: transparent;
+  width: 40%;
+  position: relative;
+}
+
+.upt {
+  width: 0;
+  height: 0;
+  border-top: 40em solid #fefae0;
+  border-right: 38em solid transparent;
+  position: absolute;
+  z-index: 1;
+
+}
+
+.lwt {
+  width: 0;
+  position: absolute;
+  height: 0;
+  border-bottom: 40em solid #bde0fe;
+  border-left: 38em solid transparent;
+
+}
+
+.log-text {
+  position: absolute;
+  top: 10rem;
+  left: 4rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 2rem;
+  gap: 1rem;
+  color: black;
+  z-index: 3;
+  text-decoration: none;
+  
+}
+
+.text-deco{
+  
+  font-family: sans-serif;
+  font-weight: bold;
+}

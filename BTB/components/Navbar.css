@@ -1,0 +1,30 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    /* padding-left: 0.2rem;
+    padding-right: 0.2rem; */
+    padding: 1rem;
+    background: #02306d;
+    justify-content: space-between;
+    color: white;
+}
+
+.nav-logo{
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+}
+
+.side-nav{
+    display: flex;
+    gap: 3rem;
+    list-style-type: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: large;
+}
