@@ -4,7 +4,7 @@ import './Footer.css'
 const Footer = () => {
     return (
         <>
-            <div class="footer">
+            <div className="footer">
 
                 <p  >
                     All &copy; Copyright reserved . Built and Maintained by team INIT
