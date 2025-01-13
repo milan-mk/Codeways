@@ -1,0 +1,74 @@
+.mainbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 89vh;
+    backgrourgb(215, 206, 206)gray;
+    color: #0d1b2a;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #b8c0ff;
+    border-radius: 1rem;
+    padding: 2rem;
+    font-family: serif;
+    font-size: medium;
+    justify-content: center;
+    align-items: center;
+    width: 50vh;
+}
+
+.heading {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.innercontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    width: 100%;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.innercontainer input[type="text"],
+[type="password"] {
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+.btn-submit {
+    padding: 6px;
+    width: 100%;
+    border: none;
+    border-radius: 1rem;
+    background-color: #03045e;
+    color: white;
+    font-family: serif;
+    font-weight: bold;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+.create {
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:hover {
+    color: blue;
+}
