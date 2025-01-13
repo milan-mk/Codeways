@@ -5,13 +5,12 @@ import { Link } from 'react-router-dom'
 
 const Login = () => {
 
-  const [form, setform] = useState([])
+  const [form, setform] = useState({})
 
-  const handlechange = (e) =>{
-    setform({...form,[e.target.name]:e.target.value})
+  const handlechange = (e) => {
+    setform({ ...form, [e.target.name]: e.target.value })
     console.log(form)
   }
-
   return (
     <>
       <div className='mainbox'>
@@ -29,13 +28,19 @@ const Login = () => {
             </div>
 
             <button className='btn-submit'>
-              Login
+              Login<script src="https://cdn.lordicon.com/lordicon.js"></script>
+              <lord-icon
+                  src="https://cdn.lordicon.com/whtfgdfm.json"
+                  trigger="hover"
+                  colors="primary:#ffffff"
+                 style={{width:"30px", height:"30px"}}>
+              </lord-icon>
             </button>
           </div>
           <div className='create'>
 
-          <p>If you don't have an account</p>
-          <Link className='link' to="/signup">click here to create one</Link>
+            <p>If you don't have an account</p>
+            <Link className='link' to="/signup">click here to create one</Link>
           </div>
         </div>
       </div>
