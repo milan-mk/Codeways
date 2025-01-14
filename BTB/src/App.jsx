@@ -3,6 +3,7 @@ import './App.css'
 import Login from "./Login2/Login.jsx"
 import About from "../components/About.jsx"
 import { Link } from "react-router-dom"
+import Signup from "../components/Signup.jsx"
 
 function App() {
 
@@ -16,10 +17,15 @@ function App() {
         <div className="right">
           <div className="upt"></div>
           <div className="lwt"></div>
-          <div className="log-text text-deco">
+          <div className="log-text text-up text-deco">
             <span>Want to get started</span>
-            <Link to="/login">Create a account</Link>
+            <Link to="/Signup">Create a account</Link>
             <span>Now</span>
+          </div>
+          <div className="log-text text-down text-deco">
+            <span>Already a member?</span>
+            <Link to="/login">Login</Link>
+            <span> to existing account</span>
           </div>
         </div>
       </div>

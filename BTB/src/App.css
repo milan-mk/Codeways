@@ -36,8 +36,6 @@
 
 .log-text {
   position: absolute;
-  top: 10rem;
-  left: 4rem;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -47,6 +45,15 @@
   z-index: 3;
   text-decoration: none;
   
+}
+.text-up{
+  top: 10rem;
+  left: 4rem;
+
+}
+.text-down{
+  bottom: 6rem;
+  right: 4rem;
 }
 
 .text-deco{
