@@ -21,7 +21,7 @@
   border-top: 40em solid #fefae0;
   border-right: 38em solid transparent;
   position: absolute;
-  z-index: 1;
+  z-index: 0;
 
 }
 
@@ -41,6 +41,7 @@
   text-align: center;
   font-size: 2rem;
   gap: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: black;
   z-index: 3;
   text-decoration: none;
@@ -60,4 +61,16 @@
   
   font-family: sans-serif;
   font-weight: bold;
+}
+
+a{
+  text-decoration: none;
+  color: lightcoral;
+}
+
+.button:hover{
+  color: #fefae0;
+  background-color: lightcoral;
+  
+  border-radius: 10px;
 }

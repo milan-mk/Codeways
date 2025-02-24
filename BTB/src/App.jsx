@@ -17,15 +17,14 @@ function App() {
         <div className="right">
           <div className="upt"></div>
           <div className="lwt"></div>
-          <div className="log-text text-up text-deco">
-            <span>Want to get started</span>
-            <Link to="/Signup">Create a account</Link>
-            <span>Now</span>
+          <div className="log-text text-up text-deco ">
+            <span>Want to get started?</span>
+            <Link to="/Signup" className="button">Create an account</Link>
+            
           </div>
           <div className="log-text text-down text-deco">
             <span>Already a member?</span>
-            <Link to="/login">Login</Link>
-            <span> to existing account</span>
+            <Link to="/login" className="button">Login</Link>
           </div>
         </div>
       </div>
