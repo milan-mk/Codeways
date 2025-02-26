@@ -4,7 +4,7 @@ import express from 'express';
 import cors from 'cors';
 import { dbConnection } from './dbConnection.js';
 import { errorMiddleware } from './middlewares/errorMiddleware.js';
-
+import userRouter from './router/userRouter.js';
 
 //entry point of the server
 const app = express();
@@ -27,6 +27,9 @@ app.use(express.json());
 
 //use express.urlencoded to send large objects and arrays through the web requests
 app.use(express.urlencoded({ extended: true }));
+
+//setup router for user SignUp
+app.use("/api/v1/user", userRouter)
 
 //connect to mongodb database
 dbConnection();
