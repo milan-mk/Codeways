@@ -20,7 +20,9 @@ app.use(cors({
 }));
 
 //use cookieParses for cookie management
-app.use(cookieParser());
+app.use(cookieParser({
+
+}));
 
 //use json parser for parsing incoming requests with json payloads
 app.use(express.json());
@@ -29,7 +31,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 //setup router for user SignUp
-app.use("/api/v1/user", userRouter)
+app.use("/user", userRouter)
 
 //connect to mongodb database
 dbConnection();
