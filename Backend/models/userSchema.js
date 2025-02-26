@@ -35,11 +35,11 @@ userSchema.pre("save", async function(next) {
         next();
     }
 
-    this.password = argon2.hash(this.password);
+    this.password = await argon2.hash(this.password);
 });
 
 userSchema.methods.comparePassword = async function(enteredPassword) {
-    return await argon2.verify(this.password, enteredPassword);
+    return await argon2.verify( enteredPassword, this.password);
 }
 
 userSchema.methods.generateJsonWebToken = function() {
