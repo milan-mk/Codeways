@@ -3,6 +3,8 @@ import { config } from 'dotenv';
 import express from 'express';
 import cors from 'cors';
 import { dbConnection } from './dbConnection.js';
+import { errorMiddleware } from './middlewares/errorMiddleware.js';
+
 
 //entry point of the server
 const app = express();
@@ -28,6 +30,9 @@ app.use(express.urlencoded({ extended: true }));
 
 //connect to mongodb database
 dbConnection();
+
+//use the error middleware here
+app.use(errorMiddleware);
 
 //export the app
 export default app;
